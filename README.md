@@ -64,3 +64,44 @@ This repository contains solutions to the problems of [Project Euler](https://en
     - List all the primes below 2 million and sum them up
     Ans: 142913828922
 
+12. Highy divisible triangular number:
+
+    - Number of divisors of 2^a3^b5^c... = (a + 1)(b + 1)(c + 1)...  
+    - We could find number of divisors of every number using a sieve.  
+    - nD(n(n+1)/2) = nD(n)nD((n+1)/2) or nD(n/2)nD(n+1) based on parity of n.  
+    Ans: 76576500
+
+13. Large sum:
+
+    - Use library big integers
+    Ans: 5537376230
+
+14. Longest Collatz sequence:
+
+    - Memoize upto 10**6 numbers
+    - Compute prefix max argument
+    Ans: 837799
+
+15. Lattice paths:
+
+    - Ans is ^2nC_n_
+    Ans: 137846528820
+
+16. Power Digit sum:
+
+    - Store huge numbers as char array and simulate multiplying by hand.
+    Ans: 1366
+
+18. Maximum path sum I:
+
+    - DP
+    Ans: 1074
+
+20. Factorial digit sum
+
+    - Library big integers
+    Ans: 648
+
+21. Amicable numbers:
+
+    - Sum of divisors = pi(pi^mi+1 - 1)/(pi - 1) where n = pi^mi

@@ -28,6 +28,7 @@ This repository contains solutions to the problems of [Project Euler](https://en
 4. Largest palindrome product:
 
     - There are only 1000 3- digit number and all combinations can be enumerated with ease.  
+    - Iterate over multiples of 11.  
     - Binary search for the largest number less than n. Or simple linear search will work too because the number of palindromes is just 2470.  
     Ans: 906609  
 
@@ -105,3 +106,36 @@ This repository contains solutions to the problems of [Project Euler](https://en
 21. Amicable numbers:
 
     - Sum of divisors = pi(pi^mi+1 - 1)/(pi - 1) where n = pi^mi
+
+24. Lexicographi permutations:
+
+    - Read about factorial number systems
+    Ans: 2783915460
+
+25. 1000-digit Fibonacci number:
+
+    - F(n) = floor((phi^2)/(5^1/2) + 1/2)
+    - Number of digits in n = ceil(log10(n))
+    Ans: 4782
+
+26. Reciprocal cycles:
+
+    - 1/y = 0.000...0.cycle.cycle.cycle...
+    - 10^i/y = 0.cycle.cycle.cycle...
+    - 10^i+c/y = cycle.cycle.cycle....
+    - (10^i)(10^c - 1)/y = cycle
+    - y must divide 10^i or 10^c - 1
+    Ans: 983
+
+27. Quadratic primes:
+
+    - f(0) = b which needs to be prime.
+    - Try all possible values of n and test f(n) for prime.
+    Ans: -59231 (-61, 971)
+
+28. Number spiral diagnols:
+
+    - Smallest corner in kth square = 1 + 4k(k+1) - 6k, solved recursively
+    - Sum till kth square = 1 + 4k + 2k(k+1)(8k+7)/3, solved recursively
+    Ans: 669171001
+
